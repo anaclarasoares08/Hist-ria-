@@ -1,1 +1,171 @@
+/* Estilos Gerais - Estética de Pergaminho e Nobreza Feudal */
+body {
+    background-color: #1a120b;
+    background-image: radial-gradient(circle, #2c1e11 0%, #0f0a06 100%);
+    color: #e7d6be;
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #2a0808 0%, #1a120b 100%);
+    border-bottom: 3px double #d4af37; /* Borda dupla dourada imperial */
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #d4af37;
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.subtitle {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.5rem;
+    color: #b0923a;
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Seções de Conteúdo Histórico */
+.historico-section {
+    background: #261a10;
+    border: 2px solid #3d2a19;
+    box-shadow: inset 0 0 20px #000, 0 10px 25px rgba(0,0,0,0.7);
+    padding: 40px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Detalhe ornamental gótico nos cantos superiores */
+.historico-section::before {
+    content: "✦";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #d4af37;
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-family: 'MedievalSharp', cursive;
+    color: #d4af37;
+    border-bottom: 1px solid #5c4028;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.1rem;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+strong {
+    color: #f3e1c6;
+}
+
+/* Container dos Cards de Perguntas */
+.quiz-container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.quiz-title {
+    font-family: 'Cinzel Decorative', serif;
+    color: #d4af37;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* Estilo dos Cards Interativos (Estilo Pergaminho Antigo) */
+.card {
+    background-color: #f2e3c6;
+    background-image: radial-gradient(circle, #f9f1e0 0%, #e2ceaa 100%);
+    color: #2b1d0c;
+    border: 2px solid #8a6d3b;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.2);
+    border-color: #d4af37;
+}
+
+.card h3 {
+    font-family: 'MedievalSharp', cursive;
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #5c1d1d; /* Vermelho heráldico medieval */
+    border-bottom: 1px dashed #8a6d3b;
+    padding-bottom: 10px;
+}
+
+/* Botão para revelar a resposta */
+.btn-resposta {
+    background-color: #4a1515;
+    color: #f2e3c6;
+    border: 1px solid #d4af37;
+    padding: 8px 12px;
+    font-family: 'MedievalSharp', cursive;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+    margin-top: 15px;
+}
+
+.btn-resposta:hover {
+    background-color: #722020;
+}
+
+/* Texto da resposta (escondido inicialmente por padrão) */
+.resposta {
+    display: none;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-style: italic;
+    color: #1b521b; /* Verde heráldico */
+    font-weight: bold;
+    border-top: 1px solid #bc9d6e;
+    padding-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0f0a06;
+    color: #6e563b;
+    font-size: 0.9rem;
+    border-top: 1px solid #2c1e11;
+}
 
